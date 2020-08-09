@@ -108,7 +108,7 @@ article {
  
 header {
     background: #1c1c1c;
-    padding: 5px 10px;
+    padding: 6px 10px;
 }
  
 header:after {
@@ -308,6 +308,13 @@ p {
     font-style: italic;
     font-size: 0.6em;
     font-weight: bold;
+}
+
+.alg-titulo{
+    color: blue;
+    font-weight: 0px;
+    font-family: Courier;
+    font-size: 0.8em;
 }
 
 .exercicio {
