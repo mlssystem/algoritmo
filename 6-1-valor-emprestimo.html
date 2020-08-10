@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <title>Caucular Imposto</title>
+    <title>Empréstimo</title>
     <meta name="description" content="Site pessoal de estudos relacionados a programação">
     <meta name="keywords" content="">
     <meta name="author" content="Marcus">
@@ -24,28 +24,44 @@
     <h2>Exercícios</h2>
     </div>
     <div class="codigo">
-<h2>algoritmo<span class="alg-titulo">&#34;Calcular Imposto;&#34;</span></h2>
+<h2>algoritmo<span class="alg-titulo">&#34;Empréstimo;&#34;</span></h2>
 <!--// Função :
 // Autor :
 // Data : 02/03/2017
 // Seção de Declarações -->
 <h2>var</h2>
     <div class="identecao">
-      produto, imposto: real
+      emprestimo, acrescimo, parcelas, total: Real
     </div>
 <hr>
 <h2>inicio</h2>
     <div class="identecao">
-      Escreva("Qual o valor do produto? ")
+      escreval ("Qual o valor do empréstimo?")
       <br>
-      Leia (produto)
+      escreva ("Digite o valor: ")
       <br>
-      c <- 5
+      leia (emprestimo)
       <br>
       imposto <- (produto*10)/100
       <br>
-      EscrevaL("Você vai pagar R$",imposto:5:2, " de imposto sobre este 
-produto")
+      escreval ("Quantas parcelas?")
+      <br>
+      escreva ("Digite a quantidade de parcelas: ")
+      <br>
+      leia (parcelas)
+      <br>
+      acrescimo <- emprestimo * 20 / 100
+      <br>
+      total <- (emprestimo + acrescimo) / parcelas
+      <br>
+      parcelas <- (parcelas)
+      <br>
+      escreval ("Serão pagas",parcelas ," parcelas no valor 
+      de R$",total)
+      <br>
+      escreval ("")
+      <br>
+      escreva ("Com acréscimo de R$",acrescimo," no valor total")
     </div>
 <hr>      
 <h2>fimalgoritmo</h2>
@@ -56,8 +72,8 @@ produto")
   <div class="alg-list">
     <p><span class="alg-tit-span">Mais exercícios</span></p>
         <ul class="alg-list">
-            <li><a class="ativo" href="#"><span>Calcular Imposto</span></a></li>
-            <li><a href="6-1-exercicio-valor-de-emprestimo.html"><span>Valor de Emprestimo</span></a></li>
+            <li><a href="#"><span>Calcular Imposto</span></a></li>
+            <li><a class="ativo" href="6-1-exercicio-valor-de-emprestimo.html"><span>Valor de Emprestimo</span></a></li>
             <li><a href="6-2-fahrenheit-celsius.html"><span>Fahrenheit para Celsius</span></a></li>
             <li><a href="6-3-idade-creuza.html"><span>Idade Creuza</span></a></li>
             <li><a href="6-4Reais-em-dolar.html"><span>Reais em Dolar</span></a></li>
@@ -69,7 +85,7 @@ produto")
         <ul>             
             <li><a href="https://mlssystem.github.io/">Home</a></li>                       
             <li><a href="index.html">Algoritmo</a></li>             
-            <li><a id="ativo" class="ativo" href="#">Calcular Imposto</a></li>             
+            <li><a id="ativo" class="ativo" href="#">Empréstimo</a></li>             
             <li><a target="_blank" href="https://bibliasagrada.github.io">Bíblia</a></li>             
             <li class="top"><a href="#home">Top</a></li>             
         </ul>            
