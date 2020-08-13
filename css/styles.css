@@ -313,7 +313,7 @@ p {
 .alg-titulo{
     color: blue;
     font-weight: 0px;
-    font-family: Courier;
+    font-family: FonteLogo;
     font-size: 0.6em;
 }
 
@@ -329,10 +329,19 @@ p {
     margin-bottom: 17px;
 }
 
-.identecao {
+.identacao {
     margin-left: 20px;
 }
 
+.alg-caso{
+    color: blue;
+}
+
+.alg-se {
+    color: red;
+}
+
+/*##### ALGORITMO LISTA #####*/
 .alg-list {
     text-align: center;
 }

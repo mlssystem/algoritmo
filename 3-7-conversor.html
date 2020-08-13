@@ -30,12 +30,12 @@
 // Data : 07/11/2016
 // Seção de Declarações -->
 <h2>var</h2>
-<div class="identecao">
+<div class="identacao">
 Angulo , S: Real
 </div>
 <hr>
 <h2>inicio</h2>
-<div class="identecao">
+<div class="identacao">
 Escreva ("Informe seu Angulo: ")
 <br>
 leia (angulo)
@@ -56,193 +56,179 @@ Escreval ("O Seno de", angulo, " e igual a", S)
 //Autor:
 //Data:
 //Seção:-->
-<h2>var</h2>
-<div class="identecao"> 
-  kb, mb, gb: real
-<br>
-  opc: inteiro  
+    <h2>var</h2>
+<div class="identacao"> 
+    kb, mb, gb: real
+    <br>
+    opc: inteiro  
 </div>
-<hr>
-<h2>inicio</h2>
-<div class="identecao">
-   Repita
+    <hr>
+    <h2>inicio</h2>
+<div class="identacao">
+    <span class="alg-caso">Repita</span>
+<div class="identacao">
+    EscrevaL("")
+    <br>
+    EscrevaL("O resutado aparecerá na parte superior!")
+    <br>
+    EscrevaL("ESCOLHA UMA DAS OPÇÃO ABAIXO")
+    <br>
+    EscrevaL("")
+    <br>
+    EscrevaL(" Kbyte em Mbyte opção [1]")
+    <br>
+    Escreval("")
+    <br>
+    EscrevaL
+    <br>
+    Escreval(" Kbyte em Gbyte opção [2]")
+    <br>
+    Escreval("")
+    <br>
+    EscrevaL
+    <br>
+    EscrevaL(" Mbyte em Kbyte opção [3]")
+    <br>
+    Escreval("")
+    <br>
+    EscrevaL
+    <br>
+    EscrevaL(" Mbyte em Gbyte opção [4]")
+    <br>
+    Escreval("")
+    <br>
+    EscrevaL
+    <br>
+    Escreval(" Gbyte em Kbyte opção [5]")
+    <br>
+    Escreval("")
+    <br>
+    EscrevaL
+    <br>
+    EscrevaL(" Gbyte em Mbyte opção [6]")
+    <br>
+    Escreval("")
+    <br>
+    EscrevaL
+    <br>
+    Escreval(" Para sair digite a opção [7]")
+    <br>
+    Escreval("")
+    <br>
+    Leia (opc)
+    <br>
+    LimpaTela
+    <br>
+    <span class="alg-caso">Escolha (opc)</span>
+<div class="identacao">
+    <span class="alg-caso">caso 1</span>  
+<div class="identacao">
+    Escreval("--------------------------------")
+    <br>
+    EscrevaL("Convertendo Kilobyte em Megabyte")
+    <br>
+    Escreval("--------------------------------")
+    <br>
+    Escreva("Informe a quantidade de KB: ")
+    <br>
+    Leia (kb)
+    <br>
+    mb <- (kb/1000)
+    <br>
+    EscrevaL(kb," KB = ", mb," MB")
 </div>
-<div class="identecao">
-      EscrevaL("")
-<br>
-      EscrevaL("O resutado aparecerá na parte superior!")
-<br>
-      EscrevaL("ESCOLHA UMA DAS OPÇÃO ABAIXO")
-<br>
-      EscrevaL("")
-<br>
-      EscrevaL(" Kbyte em Mbyte opção [1]")
-<br>
-      Escreval("")
-<br>
-      EscrevaL
-<br>
-      Escreval(" Kbyte em Gbyte opção [2]")
-<br>
-      Escreval("")
-<br>
-      EscrevaL
-<br>
-      EscrevaL(" Mbyte em Kbyte opção [3]")
-<br>
-      Escreval("")
-<br>
-      EscrevaL
-<br>
-      EscrevaL(" Mbyte em Gbyte opção [4]")
-<br>
-      Escreval("")
-<br>
-      EscrevaL
-<br>
-      Escreval(" Gbyte em Kbyte opção [5]")
-<br>
-      Escreval("")
-<br>
-      EscrevaL
-<br>
-      EscrevaL(" Gbyte em Mbyte opção [6]")
-<br>
-      Escreval("")
-<br>
-      EscrevaL
-<br>
-      Escreval(" Para sair digite a opção [7]")
-<br>
-      Escreval("")
-<br>
-      Leia (opc)
-<br>
-      LimpaTela
-      <p style="color: blue;">Escolha (opc)</p>
-<div class="identecao">
-
-        <p style="color: red;">caso 1</p>  
-<div class="identecao">
-
-            Escreval("--------------------------------")
-<br>
-            EscrevaL("Convertendo Kilobyte em Megabyte")
-<br>
-            Escreval("--------------------------------")
-<br>
-            Escreva("Informe a quantidade de KB: ")
-<br>
-            Leia (kb)
-<br>
-            mb <- (kb/1000)
-<br>
-            EscrevaL(kb," KB = ", mb," MB")
+    <span class="alg-caso">caso 2</span>    
+<div class="identacao">
+    Escreval("--------------------------------")
+    <br>
+    Escreval("Convertendo Kilobyte em Gigabyte")
+    <br>
+    Escreval("---------------------------------")
+    <br>
+    Escreva("Informe a quantidade em KB: ")
+    <br>
+    Leia (kb)
+    <br>
+    gb <- (kb/1000000)
+    <br>
+    EscrevaL(kb," KB = ", gb," GB")
 </div>
-<br>
-        <p style="color: red;">caso 2</p>    
-<div class="identecao">
-            Escreval("--------------------------------")
-<br>
-            Escreval("Convertendo Kilobyte em Gigabyte")
-<br>
-            Escreval("---------------------------------")
-<br>
-            Escreva("Informe a quantidade em KB: ")
-<br>
-            Leia (kb)
-<br>
-            gb <- (kb/1000000)
-<br>
-            EscrevaL(kb," KB = ", gb," GB")
+    <span class="alg-caso">caso 3</span>
+<div class="identacao">
+    Escreval("--------------------------------")
+    <br>
+    EscrevaL("Convertendo Megabyte em Kilobyte")
+    <br>
+    Escreval("--------------------------------")
+    <br>
+    Escreva("Informe a quantidade de MB ")
+    <br>
+    Leia (mb)
+    <br>
+    kb <- (mb*1000)
+    <br>
+    EscrevaL(mb," MB = ", kb," KB")
 </div>
-<br>
-        <p style="color: red;">caso 3</p>
-<div class="identecao">
-
-            Escreval("--------------------------------")
-<br>
-            EscrevaL("Convertendo Megabyte em Kilobyte")
-<br>
-            Escreval("--------------------------------")
-<br>
-            Escreva("Informe a quantidade de MB ")
-<br>
-            Leia (mb)
-<br>
-            kb <- (mb*1000)
-<br>
-            EscrevaL(mb," MB = ", kb," KB")
+    <span class="alg-caso">caso 4</span>
+<div class="identacao">
+    Escreval("--------------------------------")
+    <br>
+    EscrevaL("Convertendo Megabyte em Gigabyte")
+    <br>
+    Escreval("--------------------------------")
+    <br>
+    Escreva("Informe a quantidade de MB: ")
+    <br>
+    Leia (mb)
+    <br>
+    gb <- (mb/1000)
+    <br>
+    EscrevaL(mb," MB = ", gb," GB")
 </div>
-<br>
-        <p style="color: red;">caso 4</p>  
-<div class="identecao">
-
-            Escreval("--------------------------------")
-<br>
-            EscrevaL("Convertendo Megabyte em Gigabyte")
-<br>
-            Escreval("--------------------------------")
-<br>
-            Escreva("Informe a quantidade de MB: ")
-<br>
-            Leia (mb)
-<br>
-            gb <- (mb/1000)
-<br>
-            EscrevaL(mb," MB = ", gb," GB")
+    <span class="alg-caso">caso 5</span>
+<div class="identacao">
+    Escreval("--------------------------------")
+    <br>
+    Escreval("Convertendo Gigabyte em Kilobyte")
+    <br>
+    Escreval("--------------------------------")
+    <br>
+    Escreva("Informe a quantidade em GB: ")
+    <br>
+    Leia (gb)
+    <br>
+    kb <- (gb*1000000)
+    <br>
+    EscrevaL(gb," GB = ", kb," KB")
 </div>
-<br>
-        <p style="color: red;">caso 5</p>
-<div class="identecao">
-
-            Escreval("--------------------------------")
-<br>
-            Escreval("Convertendo Gigabyte em Kilobyte")
-<br>
-            Escreval("--------------------------------")
-<br>
-            Escreva("Informe a quantidade em GB: ")
-<br>
-            Leia (gb)
-<br>
-            kb <- (gb*1000000)
-<br>
-            EscrevaL(gb," GB = ", kb," KB")
+    <span class="alg-caso">caso 6</span>
+<div class="identacao">
+    Escreval("---------------------------------")
+    <br>
+    EscrevaL("Convertendo Gigabyte em Megabyte")
+    <br>
+    Escreval("---------------------------------")
+    <br>
+    Escreva("Informe a quantidade em GB: ")
+    <br>
+    Leia (gb)
+    <br>
+    mb <- (gb*1000)
+    <br>
+    EscrevaL(gb," GB = ", mb," MB")             
 </div>
-<br>
-        <p style="color: red;">caso 6</p>
-<div class="identecao">
-
-            Escreval("---------------------------------")
-<br>
-            EscrevaL("Convertendo Gigabyte em Megabyte")
-<br>
-            Escreval("---------------------------------")
-<br>
-            Escreva("Informe a quantidade em GB: ")
-<br>
-            Leia (gb)
-<br>
-            mb <- (gb*1000)
-<br>
-            EscrevaL(gb," GB = ", mb," MB")             
+    <span class="alg-caso">caso 7</span>
+<div class="identacao">
+    EscrevaL ("THE END >_ by mlssystem")   
 </div>
-<br>
-        <p style="color: red;">caso 7</p>
-<div class="identecao">
-
-            EscrevaL ("THE END >_ by mlssystem")   
-<br><br>
-
 </div>
-    <p style="color: blue;">FimEscolha</p>
-    <p style="color: blue;">Ate (opc = 7)</p>
+    <span class="alg-caso">FimEscolha</span>
 </div>
-
-<h2>fimalgoritmo</h2>
+    <span class="alg-caso">Ate (opc = 7)</span>
 </div>
-
+    <hr>
+    <h2>fimalgoritmo</h2>
+</div>
 </article>
 
 <article>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Times de Futebol</title>
+    <meta name="description" content="Site pessoal de estudos relacionados a programação">
+    <meta name="keywords" content="">
+    <meta name="author" content="Marcus">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="img/mlsicon.ico">
+</head>
+<body id="home"> 
+<div class="conteudo">
+    
+<header>
+    <a href="https://mlssystem.github.io/"><img id="icone" src="img/menu.png"></a>     
+    <a class="menu_mobile" href="#menu">Menu</a>
+</header>
+
+<article>
+    <p>Se quiser, baixe esse app ¬ <a href="https://github.com/mlssystem/algoritmo/tree/master/VisuAlg-App">Visualg</a>, copie o código, cole, teste, altere, treine, seja feliz! Sorria! Mesmo, se o mudo fizer careta (RS!).</p>
+<div class="exercicio">
+    <h2>Exercícios</h2>
+</div>
+<div class="codigo">
+<h2>algoritmo <span class="alg-titulo">&#34;Times de Futebol&#34;</span></h2>
+<!--// Função :
+// Autor : Marcus
+// Data : 12/08/2020
+// Seção de Declarações -->
+<h2>var</h2>
+<div class="identacao">
+   GOLS1, GOLS2, DIF: Real
+</div>  
+<hr> 
+<h2>inicio</h2>
+<div class="identacao">
+    EscrevaL("~~~~~~~~~~~~~~~~~~~~~~~~~")
+    <br>
+    EscrevaL("   VITÓRIA x BAHIA   ")
+    <br>
+    EscrevaL("~~~~~~~~~~~~~~~~~~~~~~~~~")
+    <br>
+    Escreva("Quantos gols do VITÓRIA? ")
+    <br>
+    Leia(GOLS1)
+    <br>
+    Escreva("Quantos gols do BAHIA? ")
+    <br>
+    Leia(GOLS2)
+    <br>
+    <div class="identacao">
+    <span class="alg-se"> Se (GOLS1 > GOLS2) entao</span>
+        <div class="identacao">
+        DIF <- GOLS1 - GOLS2
+        </div>
+    <span class="alg-caso">senao</span>
+        <div class="identacao">
+        DIF <- GOLS2 - GOLS1
+        </div>
+    <span class="alg-se">FimSe</span>    
+    </div>    
+    EscrevaL("~~~~~~~~~~~~~~~~~~~~~~~~~")
+    <br>
+    EscrevaL(" DIFERENCA: ", DIF)    
+    <div class="identacao">    
+    <span class="alg-caso">Escolha DIF</span>    
+    <div class="identacao">    
+        <span class="alg-caso">Caso 0</span>
+            <div class="identacao">
+            EscrevaL(" STATUS: EMPATE ")
+            </div>
+        <span class="alg-caso">Caso 1, 2, 3</span>
+            <div class="identacao">
+            EscrevaL(" STATUS: PARTIDA NORMAL ")
+            </div>
+        <span class="alg-caso">Caso 4,5, 6, 7</span>
+            <div class="identacao">
+            EscrevaL(" STATUS: GOLEADA ")
+            </div>
+        <span class="alg-caso">OutroCaso</span>
+            <div class="identacao">
+            EscrevaL(" STATUS: ALGO INCOMUM. ")
+            <br>
+            EscrevaL(" Voce digitou os dados corretos? ")
+            </div>
+    </div>    
+    <span class="alg-caso">FimEscolha</span>
+    <br>
+    EscrevaL("~~~~~~~~~~~~~~~~~~~~~~~~~")
+    </div>
+</div> 
+<hr>     
+<h2>fimalgoritmo</h2>
+</div>
+</article>
+
+<article>
+<div class="alg-list">
+    <p>Mais exercícios de <span class="alg-tit-span">&#34;Estruturas Condicionais Parte 2&#34;.</span></p>
+        <ul>
+            <li><a href="8-0-nota-aluno.html"><span>Nota Aluno</span></a></li>
+            <li><a href="8-1-imc-completo.html"><span>IMC Completo</span></a></li>
+            <li><a href="8-2-crianca-esperanca.html"><span>Criança Esperança</span></a></li>
+            <li><a href="8-3-dependente-funcionario.html"><span>Dependentes dos Funcionário</span></a></li>
+            <li><a href="8-4-aproveitamento-aluno.html"><span>Aproveitamento</span></a></li>
+            <li><a class="ativo" href="8-5-times-futebol"><span>Times de Futebol</span></a></li>
+        </ul>
+ </div>       
+</article>
+
+    <nav id="menu">         
+        <ul>             
+            <li><a href="https://mlssystem.github.io/">Home</a></li>                       
+            <li><a href="index.html">Algoritmo</a></li>             
+            <li><a id="ativo" class="ativo" href="#">Times de Futebol</a></li>             
+            <li><a target="_blank" href="https://bibliasagrada.github.io">Bíblia</a></li>             
+            <li class="top"><a href="#home">Top</a></li>             
+        </ul>            
+    </nav>
+     
+    <footer>
+        <p>Copyright &copy;2020 <a href="https://github.com/mlssystem">MLSSystem</a></p>
+    </footer>
+     
+</div>      
+</body> 
+</html>
