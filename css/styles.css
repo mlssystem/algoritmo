@@ -42,6 +42,15 @@ blockquote, q {
 #img {
     width: 100%;
 }
+
+.pdf {
+    text-align: right;
+}
+
+.pdf ul {
+    list-style: none;            
+}
+
 blockquote:before, blockquote:after,
 q:before, q:after {
     content: '';
