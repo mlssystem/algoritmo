@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="utf-8">
-    <title>Contador Negativos</title>
+    <title>Seletor de Pessoas</title>
     <meta name="description" content="Site pessoal de estudos relacionados a programação">
     <meta name="keywords" content="">
     <meta name="author" content="Marcus">
@@ -25,41 +25,86 @@
     <h2>Exercícios</h2>
 </div>
 <div class="codigo">
-<h2>algoritmo <span class="alg-titulo">&#34;Contador Negativos&#34;</span></h2>
+<h2>algoritmo <span class="alg-titulo">&#34;Seletor de Pessoas&#34;</span></h2>
 <!--// =============================================================
-// Algoritmo para contar quantos valores digitados foram negativos.
+// Algoritmo para ler Sexo, Idade e Cor de Cabelo de diversas pessoas
+// e ao final, mostrar:
+//     = Total de HOMENS com mais de 18 ANOS e cabelos CASTANHOS.
+//     = Total de MULHERES entre 25 e 30 ANOS e cabelos LOIROS.
 //
 // AUTOR: Gustavo Guanabara
 // Curso COMPLETO disponivel GRATIS no site www.cursoemvideo.com
 // =============================================================-->
 <h2>var</h2>
 <div class="identacao">
-   N, C, TotN: Inteiro
-</div>   
+   sexo, resp: caractere
+   <br>
+   idade, cabelo, TotH18, TotM25: inteiro
+</div>
 <hr>
 <h2>inicio</h2>
-<div class="identacao">   
-   C <- 1
-   <br>
-   TotN <- 0
-   <div class="identacao">   
+<div class="identacao">
    <span class="alg-caso">Repita</span>
+   <div class="identacao">
+      LimpaTela
       <br>
-      Escreva("Digite um numero: ")
+      EscrevaL("==========================")
       <br>
-      Leia (N)
+      EscrevaL("    SELETOR DE PESSOAS    ")
+      <br>
+      EscrevaL("==========================")
+      <br>
+      Escreva("Qual o Sexo? [M/F] ")
+      <br>
+      Leia(sexo)
+      <br>
+      Escreva("Qual a idade? ")
+      <br>
+      Leia(idade)
+      <br>
+      EscrevaL("Qual a cor do Cabelo?")
+      <br>
+      EscrevaL("---------------------")
+      <br>
+      EscrevaL("[1] Preto")
+      <br>
+      EscrevaL("[2] Castanho")
+      <br>
+      EscrevaL("[3] Loiro")
+      <br>
+      EscrevaL("[4] Ruivo")
+      <br>
+      Leia(cabelo)
+      <br>
+      <span class="alg-se">Se (sexo = "M") e (idade > 18) e (cabelo = 2) entao</span>
       <div class="identacao">
-      <span class="alg-se">Se (N<0) entao</span>
-         <div class="identacao">
-         TotN <- TotN + 1
-         </div>
+         TotH18 <- TotH18 + 1
+      </div>        
+      <span class="alg-se">FimSe</span>      
+      <div class="identacao">
+      <span class="alg-se">Se (sexo = "F") e ((idade >= 25) e (idade <= 30)) e (cabelo = 3) entao</span>
+      <div class="identacao">
+         TotM25 <- TotM25 + 1
+      </div>
       <span class="alg-se">FimSe</span>
       </div>
-      C <- C + 1
+      Escreva("Quer continuar? [S/N] ")
       <br>
-   <span class="alg-caso">Ate (C > 5)</span>
-   </div>
-   EscrevaL("Foram digitados ", TotN, " valores negativos.")
+      Leia(resp)
+   </div>   
+   <span class="alg-caso">Ate (resp = "N")</span>
+   <br>
+   LimpaTela
+   <br>
+   EscrevaL("------------------------------------")
+   <br>
+   EscrevaL(" RESULTADO FINAL ")
+   <br>
+   EscrevaL("------------------------------------")
+   <br>
+   EscrevaL("Total de homens com mais de 18 e cabelos castanhos ", TotH18)
+   <br>
+   EscrevaL("Total de mulheres entre 25 e 30 e cabelos loiros ", TotM25)
 </div>
 <hr>
 <h2>fimalgoritmo</h2>
@@ -71,12 +116,12 @@
 <p>Mais exercícios de <span class="alg-tit-span">&#34;Estruturas de Repetição 2&#34;.</span></p>
     <ul>
         <li><a href="10-0-tabuada.html"><span>Tabuada</span></a></li>
-        <li><a class="ativo" href="10-1-conta-negativos.html"><span>Contador Negativos</span></a></li>
+        <li><a href="10-1-conta-negativos.html"><span>Contador Negativos</span></a></li>
         <li><a href="10-2-somador.html"><span>Somador</span></a></li>
         <li><a href="10-3-fatorial.html"><span>Fatorial</span></a></li>
         <li><a href="10-4-primo.html"><span>Número Primo</span></a></li>
         <li><a href="10-5-menu.html"><span>Menu</span></a></li>
-        <li><a href="10-6-seletor-pessoas.html"><span>Seletor de Pessoas</span></a></li>
+        <li><a class="ativo" href="10-6-seletor-pessoas.html"><span>Seletor de Pessoas</span></a></li>
     </ul>
 </div>       
 </article>
@@ -85,7 +130,7 @@
         <ul>             
             <li><a href="https://mlssystem.github.io/">Home</a></li>                       
             <li><a href="index.html">Algoritmo</a></li>             
-            <li><a id="ativo" class="ativo" href="#">Contador Negativos</a></li>             
+            <li><a id="ativo" class="ativo" href="#">Seletor de Pessoas</a></li>             
             <li><a target="_blank" href="https://bibliasagrada.github.io">Bíblia</a></li>             
             <li class="top"><a href="#home">Top</a></li>             
         </ul>            

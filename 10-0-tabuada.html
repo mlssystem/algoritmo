@@ -26,61 +26,38 @@
 </div>
 <div class="codigo">
 <h2>algoritmo <span class="alg-titulo">&#34;Tabuada&#34;</span></h2>
-<!--// Função :
-// Autor : Marcus
-// Data : 13/08/2020
-// Seção de Declarações -->
+<!--// =============================================================
+// Algoritmo para mostrar a tabuada de um determinado numero.
+//
+// AUTOR: Gustavo Guanabara
+// Curso COMPLETO disponivel GRATIS no site www.cursoemvideo.com
+// =============================================================-->
 <h2>var</h2>
 <div class="identacao">
-   TOTAL, CONTADOR: Inteiro
+   Cont, N, R: Inteiro
+</div>   
+<hr>
+<h2>inicio</h2>
+<div class="identacao">  
+   Cont <- 1
    <br>
-   NOME, MELHOR_ALUNO: Caractere
+   Escreva("Quer ver a tabuada de qual numero? ")
    <br>
-   NOTA, MAIOR_NOTA: Real
+   Leia(N)
+ <div class="identacao">  
+   <span class="alg-caso">Repita</span>
+      <div class="identacao">
+      R <- N * Cont
+      <br>
+      EscrevaL(N, " x ", Cont, " = ", R)
+      <br>
+      Cont <- Cont + 1
+      </div>
+   <span class="alg-caso">Ate (Cont > 10)</span>
+</div>   
 </div>
 <hr>   
-<h2>inicio</h2>
-<div class="identacao">
-   Escreva ("Quantos alunos a turma? ")
-   <br>
-   Leia (TOTAL)
-   <br>
-   CONTADOR <- 1
-<div class="identacao">
-<span class="alg-caso">Enquanto (CONTADOR <= TOTAL) faca</span>
-  <div class="identacao">
-  Escreva ("ALUNO ", CONTADOR)
-  <br>
-  Escreval("")
-  <br>
-  Escreva ("Nome do aluno: ")
-  <br>
-  Leia (NOME)
-  <br>
-  Escreva ("Nota de ", NOME, ": ")
-  <br>
-  Leia (NOTA)
-  <br>
-  Escreva ("")
-  <div class="identacao">
-  <span class="alg-se">Se (NOTA > MAIOR_NOTA) entao</span>
-    <div class="identacao">
-    MAIOR_NOTA <- NOTA
-    <br>
-    MELHOR_ALUNO <- NOME
-    </div>
-  <span class="alg-se">FimSe</span>
-  </div>
-  CONTADOR <- CONTADOR + 1
-  </div>
-<span class="alg-caso">FimEnquanto</span>
-</div>
-  Escreval ("")
-  <br>
-  Escreva ("O melhor aproveitamento de ", MELHOR_ALUNO, " com a nota ", MAIOR_NOTA:3:1)
-</div>
-<hr>
-<h2>fimalgoritmo</h2>
+<h2>fimalgoritmo</h2> 
 </div>
 </article>
 
@@ -93,7 +70,7 @@
         <li><a href="10-2-somador.html"><span>Somador</span></a></li>
         <li><a href="10-3-fatorial.html"><span>Fatorial</span></a></li>
         <li><a href="10-4-primo.html"><span>Número Primo</span></a></li>
-        <li><a href="10-5-contador-menu.html"><span>Contador com Menu</span></a></li>
+        <li><a href="10-5-menu.html"><span>Menu</span></a></li>
         <li><a href="10-6-seletor-pessoas.html"><span>Seletor de Pessoas</span></a></li>
     </ul>
 </div>       

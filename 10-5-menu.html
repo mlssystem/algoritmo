@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Menu</title>
+    <meta name="description" content="Site pessoal de estudos relacionados a programação">
+    <meta name="keywords" content="">
+    <meta name="author" content="Marcus">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="img/mlsicon.ico">
+</head>
+<body id="home"> 
+<div class="conteudo">
+    
+<header>
+    <a href="https://mlssystem.github.io/"><img id="icone" src="img/menu.png"></a>     
+    <a class="menu_mobile" href="#menu">Menu</a>
+ </header>
+
+<article>
+    <p>Se quiser, baixe esse app ¬ <a href="https://github.com/mlssystem/algoritmo/tree/master/VisuAlg-App">Visualg</a>, copie o código, cole, teste, altere, treine, seja feliz! Sorria! Mesmo, se o mudo fizer careta (RS!).</p>
+<div class="exercicio">
+    <h2>Exercícios</h2>
+</div>
+<div class="codigo">
+<h2>algoritmo <span class="alg-titulo">&#34;Menu&#34;</span></h2>
+<!--
+// Tabuada, IMC, U$$ / R$ e R$ / U$$, Conversor de Dados (KB,MB,GB)
+//
+// AUTOR: Marcus
+-->
+<h2>var</h2>
+<div class="identacao">
+    Cont, N, R, opc, C, Q, op: Inteiro
+    <br>
+    M, A, IMC, US, kb, mb, gb, REAIS, D: Real   
+    <br>
+    resp: Caractere
+</div>
+<hr>
+<h2>inicio</h2>
+<div class="identacao">
+   Repita
+   <div class="identacao">
+      EscrevaL("")
+      <br>
+      EscrevaL("===================")
+      <br>
+      EscrevaL("|    M E N U    |")
+      <br>
+      EscrevaL("===================")
+      <br>
+      EscrevaL("| [1] Tabuada |")
+      <br>
+      EscrevaL("| [2] IMC |")
+      <br>
+      EscrevaL("| [3] U$$ para R$ |")
+      <br>
+      EscrevaL("| [4] R$ para U$$ |")
+      <br>
+      EscrevaL("| [5] Conversor |")
+      <br>
+      EscrevaL("| [6] Sair      |")
+      <br>
+      EscrevaL("===================")
+      <br>
+      Leia(op)
+      <br>
+      Escolha op
+        <br>
+        <span class="alg-caso">Caso 1</span>
+            <br>
+            <span class="alg-caso">Repita</span>
+            <div class="identacao">
+                Cont <- 1
+                <br>
+                Escreva("Quer ver a tabuada de qual numero? ")
+                <br>
+                Leia(N)
+                <br>
+                <span class="alg-caso">Repita</span>
+                <br>
+                R <- N * Cont
+                <br>
+                EscrevaL(N, " x ", Cont, " = ", R)
+                <br>
+                Cont <- Cont + 1
+                <br>
+            <span class="alg-caso">Ate (Cont > 10)</span>
+                <br>
+                Escreval()
+                <br>
+                Escreval("Quer continuar [S/N]? ")
+                <br>
+                Escreva ("RESP: ")
+                <br>
+                Leia (Resp)
+            </div>
+            <span class="alg-caso">Ate (Resp="n")</span>
+        <br>
+        <span class="alg-caso">Caso 2</span>
+        <div class="identacao">   
+            Escreva("Massa (Kg): ")
+            <br>
+            Leia(M)
+            <br>
+            Escreva("Altura (m): ")
+            <br>
+            Leia(A)
+            <br>
+            IMC <- M / (A ^ 2)
+            <br>
+            EscrevaL("IMC: ", IMC:5:2)
+            <br>
+            <span class="alg-se">Se (IMC < 17) entao</span>
+            <div class="identacao">
+                EscrevaL ("Muito abaixo do Peso")
+            <br>
+            <span class="alg-caso">senao</span>
+                <br>
+                <span class="alg-se">Se (IMC >= 17) e (IMC < 18.5) entao</span>
+                <div class="identacao">
+                    EscrevaL ("Abaixo so Peso")
+                <br>
+                <span class="alg-caso">senao</span>
+                    <br>
+                    <span class="alg-se">Se (IMC >= 18.5) e (IMC < 25) entao</span>
+                    <div class="identacao">
+                        EscrevaL ("Peso ideal")
+                <br>
+                <span class="alg-caso">senao</span>
+                        <br>
+                        <span class="alg-se">Se (IMC >= 25) e (IMC < 30) entao</span>
+                        <div class="identacao">
+                            EscrevaL ("Sobrepeso")
+                        <br>
+                        <span class="alg-caso">senao</span>
+                            <br>
+                            <span class="alg-se">Se (IMC >= 30) e (IMC < 35) entao</span>
+                            <div class="identacao">
+                                EscrevaL ("Obesidade")
+                            <br>
+                            <span class="alg-caso">senao</span>
+                                <br>
+                                <span class="alg-se">Se (IMC >= 35) e (IMC < 40) entao</span>
+                                <div class="identacao">
+                                    EscrevaL ("Obesidade Severa")
+                                <br>
+                                <span class="alg-caso">senao</span>
+                                    <br>
+                                    EscrevaL ("Obesidade Morbida")
+                                </div>
+                                <span class="alg-se">FimSe</span>
+                            </div>
+                            <span class="alg-se">FimSe</span>
+                        </div>
+                        <span class="alg-se">FimSe</span>
+                    </div>
+                    <span class="alg-se">FimSe</span>
+                </div>
+                <span class="alg-se">FimSe</span>
+            </div>
+            <span class="alg-se">FimSe</span>
+        </div>
+         <span class="alg-caso">Caso 3</span>
+        <div class="identacao">
+            C <- 1
+            <br>
+            Escreva ("Quantas vezes voce quer convernter? ")
+            <br>
+            Leia(Q)
+            <br>
+            <span class="alg-caso">Enquanto (C <= Q) faca</span>
+                <br>
+                Escreva("Qual o valor em US$? ")
+                <br>
+                Leia(US)
+                <br>
+                REAIS <- US*5.41
+                <br>
+                EscrevaL("O valor convertido e R$", REAIS:5:2)
+                <br>
+                C <- C + 1
+            <br>
+            <span class="alg-caso">FimEnquanto</span>
+        </div>   
+        <span class="alg-caso">Caso 4</span>
+        <div class="identacao">
+            C <- 1
+            <br>
+            Escreva ("Quantas vezes voce quer convernter? ")
+            <br>
+            Leia(Q)
+            <br>
+            <span class="alg-caso">Enquanto (C <= Q) faca</span>
+                <br>
+                Escreva("Qual o valor em R$? ")
+                <br>
+                Leia(REAIS)
+                <br>
+                D <- REAIS/5.41
+                <br>
+                EscrevaL("O valor convertido e US$", D:5:2)
+                <br>
+                C <- C + 1
+            <br>
+            <span class="alg-caso">FimEnquanto</span>
+        </div>    
+        <span class="alg-caso">Caso 5</span>
+            <div class="identacao">    
+            <span class="alg-caso">Repita</span>
+                <div class="identacao">
+                EscrevaL("")
+                <br>
+                EscrevaL("O resutado aparecerá na parte superior!")
+                <br>
+                EscrevaL("ESCOLHA UMA DAS OPÇÃO ABAIXO")
+                <br>
+                EscrevaL("")
+                <br>
+                EscrevaL(" Kbyte em Mbyte opção [1]")
+                <br>
+                Escreval("")
+                <br>
+                EscrevaL
+                <br>
+                Escreval(" Kbyte em Gbyte opção [2]")
+                <br>
+                Escreval("")
+                <br>
+                EscrevaL
+                <br>
+                EscrevaL(" Mbyte em Kbyte opção [3]")
+                <br>
+                Escreval("")
+                <br>
+                EscrevaL
+                <br>
+                EscrevaL(" Mbyte em Gbyte opção [4]")
+                <br>
+                Escreval("")
+                <br>
+                EscrevaL
+                <br>
+                Escreval(" Gbyte em Kbyte opção [5]")
+                <br>
+                Escreval("")
+                <br>
+                EscrevaL
+                <br>
+                EscrevaL(" Gbyte em Mbyte opção [6]")
+                <br>
+                Escreval("")
+                <br>
+                EscrevaL
+                <br>
+                Escreval(" Para sair digite a opção [7]")
+                <br>
+                Escreval("")
+                <br>
+                Leia (opc)
+                <br>
+                LimpaTela
+                <br>
+                Escolha (opc)
+                <br>
+                <span class="alg-caso">caso 1</span>
+                    <br>
+                    Escreval("--------------------------------")
+                    <br>
+                    EscrevaL("Convertendo Kilobyte em Megabyte")
+                    <br>
+                    Escreval("--------------------------------")
+                    <br>
+                    Escreva("Informe a quantidade de KB: ")
+                    <br>
+                    Leia (kb)
+                    <br>
+                    mb <- (kb/1000)
+                    <br>
+                    EscrevaL(kb," KB = ", mb," MB")
+                <br>
+                <span class="alg-caso">caso 2</span>
+                    <br>
+                    Escreval("--------------------------------")
+                    <br>
+                    Escreval("Convertendo Kilobyte em Gigabyte")
+                    <br>
+                    Escreval("---------------------------------")
+                    <br>
+                    Escreva("Informe a quantidade em KB: ")
+                    <br>
+                    Leia (kb)
+                    <br>
+                    gb <- (kb/1000000)
+                    <br>
+                    EscrevaL(kb," KB = ", gb," GB")
+                <br>
+                <span class="alg-caso">caso 3</span>
+                    <br>
+                    Escreval("--------------------------------")
+                    <br>
+                    EscrevaL("Convertendo Megabyte em Kilobyte")
+                    <br>
+                    Escreval("--------------------------------")
+                    <br>
+                    Escreva("Informe a quantidade de MB ")
+                    <br>
+                    Leia (mb)
+                    <br>
+                    kb <- (mb*1000)
+                    <br>
+                    EscrevaL(mb," MB = ", kb," KB")
+                <br>
+                <span class="alg-caso">caso 4</span>
+                    <br>
+                    Escreval("--------------------------------")
+                    <br>
+                    EscrevaL("Convertendo Megabyte em Gigabyte")
+                    <br>
+                    Escreval("--------------------------------")
+                    <br>
+                    Escreva("Informe a quantidade de MB: ")
+                    <br>
+                    Leia (mb)
+                    <br>
+                    gb <- (mb/1000)
+                    <br>
+                    EscrevaL(mb," MB = ", gb," GB")
+                <br>
+                <span class="alg-caso">caso 5</span>
+                    <br>
+                    Escreval("--------------------------------")
+                    <br>
+                    Escreval("Convertendo Gigabyte em Kilobyte")
+                    <br>
+                    Escreval("--------------------------------")
+                    <br>
+                    Escreva("Informe a quantidade em GB: ")
+                    <br>
+                    Leia (gb)
+                    <br>
+                    kb <- (gb*1000000)
+                    <br>
+                    EscrevaL(gb," GB = ", kb," KB")
+                <br>
+                <span class="alg-caso">caso 6</span>
+                    <br>
+                    Escreval("---------------------------------")
+                    <br>
+                    EscrevaL("Convertendo Gigabyte em Megabyte")
+                    <br>
+                    Escreval("---------------------------------")
+                    <br>
+                    Escreva("Informe a quantidade em GB: ")
+                    <br>
+                    Leia (gb)
+                    <br>
+                    mb <- (gb*1000)
+                    <br>
+                    EscrevaL(gb," GB = ", mb," MB")
+                <br>
+                <span class="alg-caso">caso 7</span>
+                    <br>
+                    EscrevaL ("THE END >_ by mlssystem")
+                    <br>
+                    <span class="alg-caso">FimEscolha</span>
+                    <br>
+                    <span class="alg-caso">Ate (opc = 7)</span>
+        </div>          
+        <span class="alg-caso">Caso 6</span>
+        <div class="identacao">
+            EscrevaL("SAINDO...")
+        </div>
+         <span class="alg-caso">Caso 7</span>
+        <div class="identacao">
+            EscrevaL("INVALIDO!")
+        </div>
+      <span class="alg-caso">FimEscolha</span>
+    </div> 
+   <span class="alg-caso">Ate (op = 6)</span>
+   </div>
+</div>
+<hr>   
+<h2>fimalgoritmo</h2>
+</div>
+</article>
+
+<article>
+<div class="alg-list">
+<p>Mais exercícios de <span class="alg-tit-span">&#34;Estruturas de Repetição 2&#34;.</span></p>
+    <ul>
+        <li><a href="10-0-tabuada.html"><span>Tabuada</span></a></li>
+        <li><a href="10-1-conta-negativos.html"><span>Contador Negativos</span></a></li>
+        <li><a href="10-2-somador.html"><span>Somador</span></a></li>
+        <li><a href="10-3-fatorial.html"><span>Fatorial</span></a></li>
+        <li><a href="10-4-primo.html"><span>Número Primo</span></a></li>
+        <li><a class="ativo" href="10-5-menu.html"><span>Menu</span></a></li>
+        <li><a href="10-6-seletor-pessoas.html"><span>Seletor de Pessoas</span></a></li>
+    </ul>
+</div>       
+</article>
+
+    <nav id="menu">         
+        <ul>             
+            <li><a href="https://mlssystem.github.io/">Home</a></li>                       
+            <li><a href="index.html">Algoritmo</a></li>             
+            <li><a id="ativo" class="ativo" href="#">Menu</a></li>             
+            <li><a target="_blank" href="https://bibliasagrada.github.io">Bíblia</a></li>             
+            <li class="top"><a href="#home">Top</a></li>             
+        </ul>            
+    </nav>
+     
+    <footer>
+            <p>Copyright &copy;2020 <a href="https://github.com/mlssystem">MLSSystem</a></p>
+    </footer>
+     
+</div>      
+</body> 
+</html>
