@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Ordena Vetor</title>
+    <meta name="description" content="Site pessoal de estudos relacionados a programação">
+    <meta name="keywords" content="">
+    <meta name="author" content="Marcus">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="img/mlsicon.ico">
+</head>
+<body id="home"> 
+<div class="conteudo">
+    
+<header>
+    <a href="https://mlssystem.github.io/"><img id="icone" src="img/menu.png"></a>     
+    <a class="menu_mobile" href="#menu">Menu</a>
+ </header>
+
+<article>
+    <p>Se quiser, baixe esse app ¬ <a href="https://github.com/mlssystem/algoritmo/tree/master/VisuAlg-App">Visualg</a>, copie o código, cole, teste, altere, treine, seja feliz! Sorria! Mesmo, se o mudo fizer careta (RS!).</p>
+<div class="exercicio">
+    <h2>Exercícios</h2>
+</div>
+<div class="codigo">
+<h2>algoritmo <span class="alg-titulo">&#34;Ordena Vetor&#34;</span></h2>
+<!--// =============================================================
+// Algoritmo para ordenar um vetor.
+//
+// AUTOR: Gustavo Guanabara
+// Curso COMPLETO disponivel GRATIS no site www.cursoemvideo.com
+// =============================================================-->
+<h2>var</h2>
+<div class="identacao">
+  v: vetor[1..10] de Inteiro
+  <br>
+  c: Inteiro
+</div>   
+<hr>
+<h2>Procedimento OrdenaVetor()</h2>
+<div class="identacao">
+<h2>var</h2>
+   i, j, aux: Inteiro
+   <br>
+<h2>inicio</h2>
+<div class="identacao">
+   <span class="alg-caso">Para i <- 1 ate 9 faca</span>
+      <div class="identacao">
+      <span class="alg-caso">Para j <- i+1 ate 10 faca</span>
+         <div class="identacao">
+         <span class="alg-se">Se (v[i] > v[j]) entao</span>
+            <div>
+            aux <- v[i]
+            <br>
+            v[i] <- v[j]
+            <br>
+            v[j] <- aux
+            </div>
+         <span class="alg-se">FimSe</span>
+         </div>
+      <span class="alg-caso">FimPara</span>
+      </div>
+   <span class="alg-caso">FimPara</span>
+</div>
+</div>
+<h2>FimProcedimento</h2>
+<hr>
+<h2>inicio</h2>
+<div class="identacao">
+  <span class="alg-caso">Para c <- 1 ate 10 faca</span>
+  <div class="identacao"> 
+      Escreva("Digite o ", c, "o. valor: ")
+      <br>
+      Leia(v[c])
+  </div>
+  <span class="alg-caso">FimPara</span>
+  <br>   
+   OrdenaVetor()
+   <br>
+   EscrevaL("-------------------------------")
+   <br>
+   EscrevaL("Vetor Ordenado: ")
+   <br>
+   EscrevaL("-------------------------------")
+  <br>
+  <span class="alg-caso">Para c <- 1 ate 10 faca</span>
+    <div class="identacao">
+      Escreva (v[c], " ")
+    </div>
+  <span class="alg-caso">FimPara</span>
+</div>
+<hr>   
+<h2>fimalgoritmo</h2> 
+</div>
+</article>
+
+<article>
+<div class="alg-list">
+<p>Mais exercícios de <span class="alg-tit-span">&#34;Vetores&#34;.</span></p>
+        <ul>
+            <li><a href="14-0-total-pares.html"><span>Total Pares</span></a></li>
+            <li><a href="14-1-listagem-alunos.html"><span>Listagem de Alunos</span></a></li>
+            <li><a href="14-2-so-com-c.html"><span>Só com C</span></a></li>
+            <li><a class="ativo" href="14-3-ordena-vetor.html"><span>Ordena Vetor</span></a></li>
+            <li><a href="14-4-torneio-futebol.html"><span>Torneio de Futebol</span></a></li>
+            <li><a href="14-5-corrige-provas.html"><span>Corrige Provas</span></a></li>
+            <li><a href="14-6-lugares-cinema.html"><span>Lugares Cinema</span></a></li>
+        </ul>
+</div>       
+</article>
+
+    <nav id="menu">         
+        <ul>             
+            <li><a href="https://mlssystem.github.io/">Home</a></li>
+            <li><a href="index.html">Algoritmo</a></li>             
+            <li><a id="ativo" class="ativo" href="#">Ordena Vetor</a></li>     
+            <li><a target="_blank" href="https://bibliasagrada.github.io">Bíblia</a></li>     
+            <li class="top"><a href="#home">Top</a></li>             
+        </ul>            
+    </nav>
+     
+    <footer>
+        <p>Copyright &copy;2020 <a href="https://github.com/mlssystem">MLSSystem</a></p>
+    </footer>
+     
+</div>      
+</body> 
+</html>

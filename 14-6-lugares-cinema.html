@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Lugares Cinema</title>
+    <meta name="description" content="Site pessoal de estudos relacionados a programação">
+    <meta name="keywords" content="">
+    <meta name="author" content="Marcus">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="img/mlsicon.ico">
+</head>
+<body id="home"> 
+<div class="conteudo">
+    
+<header>
+    <a href="https://mlssystem.github.io/"><img id="icone" src="img/menu.png"></a>     
+    <a class="menu_mobile" href="#menu">Menu</a>
+ </header>
+
+<article>
+    <p>Se quiser, baixe esse app ¬ <a href="https://github.com/mlssystem/algoritmo/tree/master/VisuAlg-App">Visualg</a>, copie o código, cole, teste, altere, treine, seja feliz! Sorria! Mesmo, se o mudo fizer careta (RS!).</p>
+<div class="exercicio">
+    <h2>Exercícios</h2>
+</div>
+<div class="codigo">
+<h2>algoritmo <span class="alg-titulo">&#34;Lugares Cinema&#34;</span></h2>
+<!--// =============================================================
+// Algoritmo para reservar lugares em uma sala de cinema.
+//
+// AUTOR: Gustavo Guanabara
+// Curso COMPLETO disponivel GRATIS no site www.cursoemvideo.com
+// =============================================================-->
+<h2>var</h2>
+<div class="identacao">
+   B: vetor[1..19] de Caractere
+   <br>
+   l, cad: Inteiro
+   <br>
+   r: Caractere
+</div>   
+<hr>
+<h2>Procedimento MostraFileira()</h2>
+<h2>var</h2>
+<div class="identacao">
+  i: Inteiro
+</div>
+<h2>inicio</h2>
+<div class="identacao">
+   <span class="alg-caso">Para i <- 1 ate 10 faca</span>
+      <div class="identacao">
+         <span class="alg-se">Se (B[i] = "") entao</span>
+            <div class="identacao">
+            Escreva ("[ B", i:2, " ]")
+            </div>
+         <span class="alg-se">senao</span>
+            <div>
+            Escreva ("[ --- ]")
+            </div>
+         <span class="alg-se">FimSe</span>
+         </div>
+      <span class="alg-caso">FimPara</span>
+   <br>
+   EscrevaL()
+   <br>
+   EscrevaL("------------------------------------------------------------------------")
+</div>
+<h2>FimProcedimento</h2>
+<hr>
+<h2>inicio</h2>
+<div class="identacao">
+   <span class="alg-caso">Repita</span>
+      <div class="identacao">
+      LimpaTela
+      <br>
+      MostraFileira()
+      <br>
+      Escreva("Reservar a cadeira: B")
+      <br>
+      Leia(cad)
+      <div class="identacao">
+      <span class="alg-se">Se (B[cad]="") entao</span>
+         <div class="identacao"> 
+         <br>      
+         B[cad] <- "X"
+         <br>
+         EscrevaL("Cadeira B", cad, " RESERVADA!")
+         </div>
+      <span class="alg-se">Senao</span>
+         <div class="identacao">
+         EscrevaL("ERRO: Lugar Ocupado!")
+       </div>
+      <span class="alg-se">FimSe</span>
+      </div>
+      Escreva("Quer reservar outro? [S/N] ")
+      <br>
+      Leia(r)
+      </div>
+   <span class="alg-caso">Ate (r = "N")</span>
+</div>
+<hr>   
+<h2>fimalgoritmo</h2> 
+</div>
+</article>
+
+<article>
+<div class="alg-list">
+<p>Mais exercícios de <span class="alg-tit-span">&#34;Vetores&#34;.</span></p>
+        <ul>
+            <li><a href="14-0-total-pares.html"><span>Total Pares</span></a></li>
+            <li><a href="14-1-listagem-alunos.html"><span>Listagem de Alunos</span></a></li>
+            <li><a href="14-2-so-com-c.html"><span>Só com C</span></a></li>
+            <li><a href="14-3-ordena-vetor.html"><span>Ordena Vetor</span></a></li>
+            <li><a href="14-4-torneio-futebol.html"><span>Torneio de Futebol</span></a></li>
+            <li><a href="14-5-corrige-provas.html"><span>Corrige Provas</span></a></li>
+            <li><a class="ativo" href="14-6-lugares-cinema.html"><span>Lugares Cinema</span></a></li>
+        </ul>
+</div>       
+</article>
+
+    <nav id="menu">         
+        <ul>             
+            <li><a href="https://mlssystem.github.io/">Home</a></li>
+            <li><a href="index.html">Algoritmo</a></li>             
+            <li><a id="ativo" class="ativo" href="#">Lugares Cinema</a></li>     
+            <li><a target="_blank" href="https://bibliasagrada.github.io">Bíblia</a></li>     
+            <li class="top"><a href="#home">Top</a></li>             
+        </ul>            
+    </nav>
+     
+    <footer>
+        <p>Copyright &copy;2020 <a href="https://github.com/mlssystem">MLSSystem</a></p>
+    </footer>
+     
+</div>      
+</body> 
+</html>
