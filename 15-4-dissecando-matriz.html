@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Dissecando Matriz</title>
+    <meta name="description" content="Site pessoal de estudos relacionados a programação">
+    <meta name="keywords" content="">
+    <meta name="author" content="Marcus">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="img/mlsicon.ico">
+</head>
+<body id="home"> 
+<div class="conteudo">
+    
+<header>
+    <a href="https://mlssystem.github.io/"><img id="icone" src="img/menu.png"></a>     
+    <a class="menu_mobile" href="#menu">Menu</a>
+ </header>
+
+<article>
+    <p>Se quiser, baixe esse app ¬ <a href="https://github.com/mlssystem/algoritmo/tree/master/VisuAlg-App">Visualg</a>, copie o código, cole, teste, altere, treine, seja feliz! Sorria! Mesmo, se o mudo fizer careta (RS!).</p>
+<div class="exercicio">
+    <h2>Exercícios</h2>
+</div>
+<div class="codigo">
+<h2>algoritmo <span class="alg-titulo">&#34;Dissecando Matriz&#34;</span></h2>
+<!--// =============================================================
+// Algoritmo para preencher uma matriz de quarta ordem e mostrar:
+// - Os elementos da diagonal principal
+// - Os elementos do triangulo superior
+// - Os elementos do triangulo inferior
+// - A matriz completa
+//
+// AUTOR: Gustavo Guanabara
+// Curso COMPLETO disponivel GRATIS no site www.cursoemvideo.com
+// =============================================================-->
+<h2>var</h2>
+<div class="identacao">
+  m: vetor[1..4, 1..4] de Inteiro
+  <br>
+  l, c, op: Inteiro
+</div>   
+<hr>
+<h2>Procedimento MostraMatriz()</h2>
+<div class="identacao">
+<h2>inicio</h2>
+   <div class="identacao"> 
+   <span class="alg-caso">Para l <- 1 ate 4 faca</span>
+      <div class="identacao">  
+      <span class="alg-caso">Para c <- 1 ate 4 faca</span>
+         <div class="identacao">
+         Escreva(m[l,c]:4)
+         </div>
+      <span class="alg-caso">FimPara</span>
+      </div>
+      EscrevaL()
+      <br>
+   <span class="alg-caso">FimPara</span>
+ </div>
+</div>   
+<h2>FimProcedimento</h2>
+<hr>
+<h2>Procedimento DiagonalPrincipal()</h2>
+<div class="identacao">
+<h2>var</h2> 
+<div class="identacao">
+t: inteiro
+</div>
+<h2>inicio</h2>
+   <div class="identacao">
+   <span class="alg-caso">Para l <- 1 ate 4 faca</span>
+      <br>
+      EscrevaL(m[l,l]:4)
+      <div class="identacao">
+      <span class="alg-caso">Para t <- 1 ate l faca</span>
+         <div class="identacao">
+         Escreva("    ")
+         </div>
+      <span class="alg-caso">FimPara</span>
+    </div>
+   <span class="alg-caso">FimPara</span>
+ </div>
+</div>   
+<h2>FimProcedimento</h2>
+<hr>
+<h2>Procedimento TrianguloSuperior()</h2>
+<div class="identacao">
+<h2>var</h2>
+<div class="identacao"> 
+t: Inteiro
+</div>
+<h2>inicio</h2>
+   <div class="identacao"> 
+   <span class="alg-caso">Para l <- 1 ate 3 faca</span>
+      <br>
+      Escreva("    ")
+      <div class="identacao">
+      <span class="alg-caso">Para c <- l+1 ate 4 faca</span>
+         <div class="identacao">     
+         Escreva(m[l,c]:4)
+         </div>
+      <span class="alg-caso">FimPara</span>
+      </div>
+      EscrevaL()
+      <div class="identacao">
+      <span class="alg-caso">Para t <- 1 ate l faca</span>
+         <div class="identacao">
+         Escreva("    ")
+       </div>
+      <span class="alg-caso">FimPara</span>
+      </div>
+   <span class="alg-caso">FimPara</span>
+   <br>
+   EscrevaL()
+ </div>
+</div>
+<h2>FimProcedimento</h2>
+<hr>
+<h2>Procedimento TrianguloInferior()</h2>
+<div class="identacao">
+<h2>inicio</h2>
+   <div class="identacao"> 
+   <span class="alg-caso">Para l <- 2 ate 4 faca</span>
+      <br>
+      EscrevaL()
+      <div class="identacao">
+      <span class="alg-caso">Para c <- 1 ate l-1 faca</span>
+         <div class="identacao">
+         Escreva(m[l,c]:4)
+       </div>
+      <span class="alg-caso">FimPara</span>
+      </div>
+   <span class="alg-caso">FimPara</span>
+   <br>
+   EscrevaL()
+ </div>
+</div>   
+<h2>FimProcedimento</h2>
+<hr>
+<h2>inicio</h2>
+<div class="identacao">
+   <span class="alg-caso">Para l <- 1 ate 4 faca</span>
+      <div class="identacao">
+      <span class="alg-caso">Para c <- 1 ate 4 faca</span>
+          <div class="identacao">
+          Escreva("Digite valor para a posicao [", l, ",", c, "]: ")
+          <br>
+          Leia(m[l,c])
+        </div>
+      <span class="alg-caso">FimPara</span>
+      </div>
+   <span class="alg-caso">FimPara</span>
+   <br>
+   LimpaTela
+   <br>
+   <span class="alg-se">Repita</span>
+      <div class="identacao">
+      EscrevaL()
+      <br>
+      EscrevaL("MENU DE OPCOES")
+      <br>
+      EscrevaL("====================")
+      <br>
+      EscrevaL("[1] Mostrar a Matriz")
+      <br>
+      EscrevaL("[2] Diagonal Principal")
+      <br>
+      EscrevaL("[3] Triangulo Superior")
+      <br>
+      EscrevaL("[4] Triangulo Inferior")
+      <br>
+      EscrevaL("[5] Sair")
+      <br>
+      <span class="alg-se">Repita</span>
+         <div class="identacao"> 
+         EscrevaL("===== OPCAO: ")
+         <br>
+         Leia(op)
+         </div>
+      <span class="alg-se">Ate (op >=1) e (op <=5)</span>
+      <br>
+      LimpaTela
+      <br>
+      <span class="alg-caso">Escolha op</span>
+         <div class="identacao">
+         Caso 1
+            <div class="identacao">
+            MostraMatriz()
+            </div>
+         Caso 2
+            <div class="identacao">
+            DiagonalPrincipal()
+            </div>
+         Caso 3
+            <div class="identacao">
+            TrianguloSuperior()
+            </div>
+         Caso 4
+            <div class="identacao">
+            TrianguloInferior()
+            </div>
+         Caso 5
+            <div class="identacao">
+            EscrevaL("ENCERRANDO...")
+            </div>
+        </div>    
+      <span class="alg-caso">FimEscolha</span>
+   </div>   
+   <span class="alg-se">Ate (op = 5)</span>
+ </div>      
+<hr>   
+<h2>fimalgoritmo</h2> 
+</div>
+</article>
+
+<article>
+<div class="alg-list">
+<p>Mais exercícios de <span class="alg-tit-span">&#34;Matriz&#34;.</span></p>
+        <ul>
+            <li><a href="15-0-preenche-matriz.html"><span>Preenche Matriz</span></a></li>
+            <li><a href="15-1-pares-matriz.html"><span>Pares Matriz</span></a></li>
+            <li><a href="15-2-matriz-identidade.html"><span>Matriz Identidade</span></a></li>
+            <li><a href="15-3-valores-matriz.html"><span>Valores Matriz</span></a></li>
+            <li><a class="ativo" href="15-4-dissecando-matriz.html"><span>Dissecando Matriz</span></a></li>
+            <li><a href="15-5-velha.html"><span>Jogo da Velha</span></a></li>
+        </ul>
+</div>       
+</article>
+
+    <nav id="menu">         
+        <ul>             
+            <li><a href="https://mlssystem.github.io/">Home</a></li>
+            <li><a href="conteudo.html">Conteúdo</a></li>             
+            <li><a id="ativo" class="ativo" href="#">Dissecando Matriz</a></li>     
+            <li><a target="_blank" href="https://bibliasagrada.github.io">Bíblia</a></li>     
+            <li class="top"><a href="#home">Top</a></li>             
+        </ul>            
+    </nav>
+     
+    <footer>
+        <p>Copyright &copy;2020 <a href="https://github.com/mlssystem">MLSSystem</a></p>
+    </footer>
+     
+</div>      
+</body> 
+</html>

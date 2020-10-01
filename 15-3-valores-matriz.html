@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>Valores Matriz</title>
+    <meta name="description" content="Site pessoal de estudos relacionados a programação">
+    <meta name="keywords" content="">
+    <meta name="author" content="Marcus">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="img/mlsicon.ico">
+</head>
+<body id="home"> 
+<div class="conteudo">
+    
+<header>
+    <a href="https://mlssystem.github.io/"><img id="icone" src="img/menu.png"></a>     
+    <a class="menu_mobile" href="#menu">Menu</a>
+ </header>
+
+<article>
+    <p>Se quiser, baixe esse app ¬ <a href="https://github.com/mlssystem/algoritmo/tree/master/VisuAlg-App">Visualg</a>, copie o código, cole, teste, altere, treine, seja feliz! Sorria! Mesmo, se o mudo fizer careta (RS!).</p>
+<div class="exercicio">
+    <h2>Exercícios</h2>
+</div>
+<div class="codigo">
+<h2>algoritmo <span class="alg-titulo">&#34;Valores Matriz&#34;</span></h2>
+<!--// =============================================================
+// Algoritmo para ler uma matriz de quarta ordem e mostrar no final:
+// - A soma dos valores da diagonal principal
+// - O produto dos valores da segunda linha
+// - O maior valor da terceira coluna
+//
+// AUTOR: Gustavo Guanabara
+// Curso COMPLETO disponivel GRATIS no site www.cursoemvideo.com
+// =============================================================-->
+<h2>var</h2>
+<div class="identacao">
+  m: vetor[1..4, 1..4] de Inteiro
+  <br>
+  l, c, sDP, p2L, mai3C: Inteiro
+</div>   
+<hr>
+<h2>inicio</h2>
+   sDP <- 0
+   <br>
+   p2L <- 1
+<div class="identacao">
+  <span class="alg-caso">Para l <- 1 ate 4 faca</span>
+      <div class="identacao">
+      <span class="alg-caso">Para c <- 1 ate 4 faca</span>
+          <div class="identacao">
+          Escreva("Digite o valor da Posicao [", l, ",", c, "]: ")
+          <br>
+          Leia(m[l,c])
+          <br>
+          <span class="alg-se">Se(l = c) entao</span>
+              <div class="identacao">
+              sDP <- sDP + m[l,c]
+              </div>
+          <span class="alg-se">FimSe</span>
+          </div>    
+  <span class="alg-caso">FimPara</span>       
+</div>
+<span class="alg-caso">FimPara</span>
+<br>
+<span class="alg-caso">Para l <- 1 ate 4 faca</span>
+    <div class="identacao">
+    <span class="alg-caso">Para c <- 1 ate 4 faca</span>
+        <div class="identacao">
+        Escreva(m[l,c]:4)
+        </div>
+    <span class="alg-caso">FimPara</span>       
+    </div>
+    Escreval()
+    <br> 
+    <span class="alg-caso">FimPara</span> 
+    <br>
+    <span class="alg-caso">Para c <- 1 ate 4 faca</span>
+    <div class="identacao">
+        p2L <- p2L * m[2,c]
+    </div> 
+    <span class="alg-caso">FimPara</span> 
+    <br>
+   <span class="alg-caso">Para l <- 1 ate 4 faca</span>
+      <div class="identacao">
+      <span class="alg-se">Se (m[l,3] > mai3C) entao</span>
+         <div class="identacao">
+         mai3C <- m[l,3]
+         </div>
+      <span class="alg-se">FimSe</span>
+    </div>
+   <span class="alg-caso">FimPara</span> 
+   <br>
+   EscrevaL("A soma dos valores da Diagonal Principal e ", sDP)
+   <br>
+   EscrevaL("O produto dos valores da Segunda Linha e ", p2L)
+   <br>
+   EscrevaL("O maior valor da Terceira Coluna e ", mai3C)          
+</div>    
+<hr>   
+<h2>fimalgoritmo</h2> 
+</div>
+</article>
+
+<article>
+<div class="alg-list">
+<p>Mais exercícios de <span class="alg-tit-span">&#34;Matriz&#34;.</span></p>
+        <ul>
+            <li><a href="15-0-preenche-matriz.html"><span>Preenche Matriz</span></a></li>
+            <li><a href="15-1-pares-matriz.html"><span>Pares Matriz</span></a></li>
+            <li><a href="15-2-matriz-identidade.html"><span>Matriz Identidade</span></a></li>
+            <li><a class="ativo" href="15-3-valores-matriz.html"><span>Valores Matriz</span></a></li>
+            <li><a href="15-4-dissecando-matriz.html"><span>Dissecando Matriz</span></a></li>
+            <li><a href="15-5-velha.html"><span>Jogo da Velha</span></a></li>
+        </ul>
+</div>       
+</article>
+
+    <nav id="menu">         
+        <ul>             
+            <li><a href="https://mlssystem.github.io/">Home</a></li>
+            <li><a href="conteudo.html">Conteúdo</a></li>             
+            <li><a id="ativo" class="ativo" href="#">Valores Matriz</a></li>     
+            <li><a target="_blank" href="https://bibliasagrada.github.io">Bíblia</a></li>     
+            <li class="top"><a href="#home">Top</a></li>             
+        </ul>            
+    </nav>
+     
+    <footer>
+        <p>Copyright &copy;2020 <a href="https://github.com/mlssystem">MLSSystem</a></p>
+    </footer>
+     
+</div>      
+</body> 
+</html>
