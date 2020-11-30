@@ -139,6 +139,7 @@ nav li a.ativo {
 
 nav li a#ativo {
     color: #000;
+    border-radius: 10% 20%;
 }
 /*######### ANCORA ############*/ 
 
@@ -201,6 +202,7 @@ a.menu_mobile {
 #menu li a:focus {
     color: #000;
     background: #ccc;
+    border-radius: 10% 20%;
 }
 
 /*######## BANNER ##########*/
