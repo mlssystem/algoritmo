@@ -1,114 +1,233 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<!doctype html>
+<html lang="pt-BR" class="h-100">
+  <head> 
     <meta charset="utf-8">
     <title>Equação</title>
     <meta name="description" content="Site pessoal de estudos relacionados a programação">
     <meta name="keywords" content="">
     <meta name="author" content="Marcus">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="robots" content="index, follow">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="robots" content="index, follow">    
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
     <link rel="shortcut icon" href="img/mlsicon.ico">
-</head>
-<body id="home">
-<div class="conteudo"> 
-<header>
-    <a href="https://mlssystem.github.io/"><img id="icone" src="img/menu.png"></a>     
-    <a class="menu_mobile" href="#menu">Menu</a>
-</header>
+    <link href="css/sticky-footer-navbar.css" rel="stylesheet">
+    <style>
+    .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none; 
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    } 
 
-<article>
-    <p>Se quiser, baixe esse app ¬ <a href="https://github.com/mlssystem/algoritmo/tree/master/VisuAlg-App">Visualg</a>, copie o código, cole, teste, altere, treine, seja feliz! Sorria! Mesmo, se o mudo fizer careta (RS!).</p>
-    <div class="exercicio">
-    <h2>Exercícios</h2>    
-    </div>
-    <div class="codigo">
-<h2>algoritmo "equacao"</h2>
-<!--// Função :
-// Autor : Curso em Vídeo
-// Data : 05/11/2016
-// Seção de Declarações -->
-<h2>var</h2>
-<div class="idantecao">
-a, b, c: Inteiro
-<br>
-Delta: Real
-<br>
-x1, x2: Real
-</div>
-<hr>
-<h2>inicio</h2>
-<div class="idantecao">
-     Escreval ("Equação do Segundo Grau")
-     <br>
-     Escreval ("-----------------------")
-     <br>
-     Escreva ("Informe o Valor de A:")
-     <br>
-     Leia (a)
-     <br>
-     Escreva ("Informe o Valor de B:")
-     <br>
-     Leia (b)
-     <br>
-     Escreva ("Informe o Valor de C:")
-     <br>
-     Leia (c)
-     <br>
-     Escreval ("-----------------------")
-     <br>
-     Escreval ("Sua Equação e: ", a, "x2 +", b, "x +", c, " = 0")
-     <br>
-     delta := (b*b) - 4*a*c
-     <br>
-     Escreval ("Valor de Delta: ", delta:4:2)
-     <br><br>
-     <div class="idantecao">
-     <p style="color: blue;">Se (delta < 0) entao</p> 
-        Escreval ("Para Delta negativo, não existe raizes Reais")
-     <p style="color: red;">senao</p>
-     <div class="idantecao">
-          <p style="color: blue;">se (delta = 0) entao</p>
-              x1 := (-b + raizQ(delta))/(2*a)
-              <br>
-              Escreval ("Para Delta zero, temos duas raizes igual a ", x1)
-           <p style="color: red;">senao</p> 
-                x1 := (-b + raizQ(delta))/(2*a)
-                <br>
-                x2 := (-b - raizQ(delta))/(2*a)
-                <br>
-                Escreval ("Para Delta positivo. Raizes diferentes: ")
-                <br>
-                Escreval ("x' &#61; ", x1:4:2)
-                <br>
-                Escreval ("x'' &#61; ", x2:4:2)
-                <br><br>
-           <p style="color: blue;">fimSe</p>
-     </div>           
-           <p style="color: blue;">fimSe</p>
-    </div>  
-    </div> 
-     <hr>
-<h2>fimalgoritmo</h2>
-</div>
+    table {
+        width: 100%;
+    }
+ 
+    thead {
+        text-align: center;
+        background-color: #000;
+        color: #fff;
+    }
 
-</article>
+    tr:nth-child(even) {
+        background-color: #eee;
+    }
 
-    <nav id="menu">         
-        <ul>             
-            <li><a href="https://mlssystem.github.io/">Home</a></li>                       
-            <li><a href="conteudo.html">Conteúdo</a></li>             
-            <li><a id="ativo" class="ativo" href="algoritmo.html">Equação</a></li>             
-            <li><a target="_blank" href="https://bibliasagrada.github.io">Bíblia</a></li>             
-            <li class="top"><a href="#home">Top</a></li>             
-        </ul> 
+    table, td {         
+        border: .5px solid rgba(0,0,0,0.5);
+    }
+
+    th, td {
+        font-size: 1.2em;
+        padding: 8px;
+        text-align: center;            
+    }
+
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+         font-size: 3.5rem;
+        }
+    }
+    </style>
+  </head>
+  <body class="d-flex flex-column h-100">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="https://mlssystem.github.io/"><img id="icone" src="img/menu.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> 
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown"> 
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Conteúdo</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="cev.html#comando-saida">Comando de saída</a>
+              <a class="dropdown-item" href="cev.html#comando-entrada-operadores">Comando de Entrada e Operadores</a>
+              <a class="dropdown-item" href="cev.html#operadores-logicos-relacionais">Operadores Lógicos e Relacionais</a>
+              <a class="dropdown-item" href="cev.html#introducao-scratch">Introdução ao Scratch</a>
+              <a class="dropdown-item" href="cev.html#exercicios-algoritmo">Exercícios de Algorítmo</a>
+              <a class="dropdown-item" href="cev.html#estruturas-condicionais1">Estruturas Condicionais</a>      
+              <a class="dropdown-item" href="cev.html#estrutura-repeticao1">Estruturas de Repetição</a>
+              <a class="dropdown-item" href="cev.html#rotinas1">Rotinas</a>
+              <a class="dropdown-item" href="cev.html#vetores">Vetores</a>
+              <a class="dropdown-item" href="cev.html#matriz">Matriz</a>
+            </div>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>            
+            <li class="nav-item active">
+              <a class="nav-link" href="#" target="_blank">Equação</a>
+            </li>            
+            <li class="nav-item">
+              <a class="nav-link" href="https://bibliasagrada.github.io" target="_blank" >Bíblia Sagrada</a>
+            </li> 
+        </ul>
+        <!--<form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>-->
+      </div>
     </nav>
-     
-    <footer>
-            <p>Copyright &copy;2020 <a href="https://github.com/mlssystem">MLSSystem</a></p>
-    </footer>
-     
-</div>      
-</body> 
+
+<main role="main" class="flex-shrink-0">
+  <div class="container">
+      <p id="iniciando"></p>
+      <p>Se quiser, baixe esse app ¬ <a href="https://github.com/mlssystem/algoritmo/tree/master/VisuAlg-App">Visualg</a>, copie o código, cole, teste, altere, treine, seja feliz! Sorria! Mesmo, se o mudo fizer careta (RS!).</p>
+      <div class="exercicio">
+      <h2>Exercícios</h2>    
+      </div>
+      <div class="codigo">
+          <h2>algoritmo "equacao"</h2>
+          <!--// Função :
+          // Autor : Curso em Vídeo
+          // Data : 05/11/2016
+          // Seção de Declarações -->
+          <h2>var</h2>
+          <div class="identacao">
+              a, b, c: Inteiro
+              <br>
+              Delta: Real
+              <br>
+              x1, x2: Real
+          </div>
+          <hr>
+          <h2>inicio</h2>
+          <div class="identacao">
+              Escreval ("Equação do Segundo Grau")
+              <br>
+              Escreval ("-----------------------")
+              <br>
+              Escreva ("Informe o Valor de A:")
+              <br>
+              Leia (a)
+              <br>
+              Escreva ("Informe o Valor de B:")
+              <br>
+              Leia (b)
+              <br>
+              Escreva ("Informe o Valor de C:")
+              <br>
+              Leia (c)
+              <br>
+              Escreval ("-----------------------")
+              <br>
+              Escreval ("Sua Equação e: ", a, "x2 +", b, "x +", c, " = 0")
+              <br>
+              delta := (b*b) - 4*a*c
+              <br>
+              Escreval ("Valor de Delta: ", delta:4:2)
+              <br>
+              <div class="identacao">
+                  <span style="color: blue;">Se (delta < 0) entao</span> 
+                  <div class="identacao">
+                  Escreval ("Para Delta negativo, não existe raizes Reais")
+                  </div>
+                  <span style="color: red;">senao</span>
+                  <div class="identacao">
+                      <span style="color: blue;">se (delta = 0) entao</span>
+                      x1 := (-b + raizQ(delta))/(2*a)
+                      <div class="identacao">
+                          Escreval ("Para Delta zero, temos duas raizes igual a ", x1)
+                      </div>
+                      <span style="color: red;">senao</span>
+                      <div class="identacao"> 
+                          x1 := (-b + raizQ(delta))/(2*a)
+                          <br>
+                          x2 := (-b - raizQ(delta))/(2*a)
+                          <br>
+                          Escreval ("Para Delta positivo. Raizes diferentes: ")
+                          <br>
+                          Escreval ("x' &#61; ", x1:4:2)
+                          <br>
+                          Escreval ("x'' &#61; ", x2:4:2)
+                      </div>
+                      <span style="color: blue;">fimSe</span>
+                  </div>   
+                  <span style="color: blue;">fimSe</span>                       
+              </div>  
+          </div> 
+          <hr>
+          <h2>fimalgoritmo</h2>
+      </div>
+  </div>
+</main>
+
+<!--<hr style="border: 1px solid black;">
+<footer class="container py-5">-->
+<footer>
+  <div class="row">
+    <div class="col-12 col-md">
+      <img src="img/30.png" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24" focusable="false"><title>Product</title><circle cx="12" cy="12" r="10"/>
+      <small class="d-block mb-3 text-muted">Copyright &copy;2020 - Marcus LS</small>
+    </div>
+    <div class="col-6 col-md">
+    <h5> Programação </h5>
+      <ul class = "list-unstyled text-small">
+        <li> <a class="text-muted" href="https://mlssystem.github.io/estudos.html">Estudos</a> </li>
+        <li> <a class="text-muted" href="https://mlssystem.github.io/algoritmo">Algoritmo</a> </li>
+        <li> <a class="text-muted" href="https://mlssystem.github.io/html">HTML</a> </li>
+        <li> <a class="text-muted" href="#"> CSS </a> </li>
+        <li> <a class="text-muted" href="#"> PHP </a> </li>
+        <li> <a class="text-muted" href="#"> JAVA </a> </li>
+      </ul>
+    </div>
+    <div class = "col-6 col-md">
+      <h5> BitBlockDig </h5>
+      <ul class = "list-unstyled text-small">
+        <li> <a class="text-muted" href="https://mlssystem.github.io/bitblockdig/index.html" target="_blank"> BBD </a> </li>
+        <li> <a class="text-muted" href="https://mlssystem.github.io/bitblockdig/criptomoedas.html" target="_blank"> Criptomoedas </a> </li>
+        <li> <a class="text-muted" href="https://mlssystem.github.io/bitblockdig/bitcoin.html" target="_blank"> Bitcoin </a> </li>
+        <li> <a class="text-muted" href="https://mlssystem.github.io/bitblockdig/ethereum.html" target="_blank"> Ethereum </a> </li>
+        <li> <a class="text-muted" href="https://mlssystem.github.io/bitblockdig/litecoin.html" target="_blank"> Litecoin </a> </li>
+      </ul>
+    </div>
+    <div class = "col-6 col-md">
+      <h5> Links </h5>
+      <ul class = "list-unstyled text-small">
+        <li> <a class="text-muted" href="https://bibliasagrada.github.io" target="_blank" >Bíblia</a> </li>
+        <li> <a class="text-muted" href="https://mlssystem.github.io/trabalhadoresdaseara/biblia-sagrada" target="_blank"> Trabalhadores da Seara </a> </li>
+      </ul>
+    </div>
+    <div class = "col-6 col-md">
+      <h5> Sobre </h5>
+      <ul class = "list-unstyled text-small">
+        <li> <a class="text-muted" href="#"> Privacidade </a> </li>
+        <li> <a class="text-muted" href="#"> Termos </a> </li>
+      </ul>
+    </div>
+  </div>
+    <p>
+      <a href="#"><img style="float: right;" src="img/top.png"></a>
+    </p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+</body>      
 </html>
