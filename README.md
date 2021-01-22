@@ -7,6 +7,9 @@ __*[Aplicativos](https://github.com/mlssystem/algoritmo/tree/master/VisuAlg-App)
 Para ter acesso aos projetos do Scratch, você prescisa baixar, e instalar o aplicativo [Scratch](https://scratch.mit.edu/download/"). Se clicar no link, será direcionado para a própria página do desenvolvedor.
 
 **Obs: A versão que usei foi: ScratchInstaller1.4.**
+
+Upgrade nav e footer bootstrap
+* index, cev, equação, introdução
  
  Não se esqueçam!
 
